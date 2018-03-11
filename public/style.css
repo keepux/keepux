@@ -1,112 +1,311 @@
-.landing {
-  background-color: #212121;
-  width: 100vw;
+.container-header {
+  background-color: #f7f7f7; }
+
+.element-logo-app {
+  height: 35px;
+  padding-left: 30px;
+  padding-top: 30px; }
+
+.container-primary {
+  display: block;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center; }
+  .container-primary .container-secondary .container-section {
+    margin-top: -100px;
+    width: 440px;
+    background-color: white; }
+    .container-primary .container-secondary .container-section .section-element-header {
+      padding-left: 21px;
+      padding-top: 20px; }
+    .container-primary .container-secondary .container-section .container-sub-text {
+      width: 400px;
+      max-width: 100%;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      text-transform: none;
+      text-align: justify;
+      padding-top: 20px; }
+    .container-primary .container-secondary .container-section .element-article-img {
+      padding-top: 10px;
+      padding-left: 20px;
+      width: 400px; }
+
+html {
+  font-family: "Lato", sans-serif; }
+
+body {
+  margin: 0;
+  overflow-x: hidden;
   height: 100vh;
-  text-align: center;
-  color: #212121;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center; }
+  width: 100vw;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
-h1 {
-  color: #d0544d; }
-
-.component-link {
-  padding: 10px 40px;
-  background-color: #6d8091;
-  color: #f7f7f7;
-  text-decoration: none;
-  border-radius: 4px; }
-
-.component-link:hover {
-  background-color: #8f8f94; }
-
-.search .container-results {
-  margin-top: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
-  display: flex; }
-  .search .container-results .results-search {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-
-.component-card {
-  width: 260px;
-  border: 2px solid #333;
-  border-radius: 4px;
-  margin-bottom: 25px;
-  padding-right: 10px;
-  position: relative;
-  background-color: white; }
-  .component-card .element-image {
-    width: auto;
-      width-position: relative;
-    float: center;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-left: 10px; }
-  .component-card .element-plot {
-    font-size: 65%;
-    font-style: italic;
-    margin-left: 10px; }
-  .component-card .element-released {
-    font-size: 70%;
-    font-weight: bolder;
-    margin-left: 10px; }
-  .component-card .element-title {
-    font-weight: bold;
-    margin-top: 10px;
-    margin-left: 10px; }
-  .component-card .element-budget {
-    font-size: 70%;
-    font-weight: bolder;
-    margin-left: 10px; }
-  .component-card .element-actors {
-    font-size: 70%;
-    margin-left: 10px; }
-
-.header {
-  z-index: 10;
+.drawer-list {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
+  right: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  background-color: #212121;
-  padding: 8px 30px; }
-  .header .search-title-bar {
-    color: #d0544d;
-    display: inline-flex;
-    margin-right: 60px; }
+  height: 100vh;
+  width: 100vw;
+  transform: translate(100vw, 0);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
+  border-bottom-left-radius: 100vw;
+  background-color: #e4e4e4;
+  background-color: rgba(222, 222, 222, 0.8); }
+  @media (min-width: 768px) {
+    .drawer-list {
+      width: 40vw; } }
+  .drawer-list .drawer-style-ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    pointer-events: auto; }
+  .drawer-list .drawer-style-li {
+    list-style: none;
+    text-transform: uppercase;
+    pointer-events: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transform: translatex(100vw);
+    /* ie workaround */
+    -ms-transform: translatex(-100vw); }
+    .drawer-list .drawer-style-li:last-child {
+      margin-bottom: 1em; }
+    .drawer-list .drawer-style-li .drawer-style-a {
+      text-decoration: none;
+      color: #575985;
+      text-align: center;
+      display: block;
+      padding: 1rem;
+      font-size: calc(24px - 0.5vw); }
+      @media (min-width: 768px) {
+        .drawer-list .drawer-style-li .drawer-style-a {
+          text-align: right;
+          padding: 1rem; } }
+    .drawer-list .drawer-style-li:hover {
+      cursor: pointer;
+      background-color: #ededed;
+      background-color: #ededed; }
+  .drawer-list .drawer-style-p {
+    text-decoration: none;
+    color: #575985;
+    text-align: center;
+    display: block;
+    padding: 1rem;
+    margin-right: 10px;
+    font-size: calc(18px - 0.5vw); }
+    @media (min-width: 768px) {
+      .drawer-list .drawer-style-p {
+        text-align: right;
+        padding: 0.5rem; } }
 
-.header > h1 {
-  font-family: Helvetica;
-  font-weight: normal;
-  color: #65b0f4;
-  margin: 0; }
+input.hamburger {
+  display: none; }
+  input.hamburger:checked ~ .drawer-list {
+    transform: translatex(0);
+    border-bottom-left-radius: 0; }
+    input.hamburger:checked ~ .drawer-list li {
+      transform: translatex(0); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(1) {
+        transition: transform 0.2s 0.02s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(2) {
+        transition: transform 0.2s 0.04s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(3) {
+        transition: transform 0.2s 0.06s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(4) {
+        transition: transform 0.2s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(5) {
+        transition: transform 0.2s 0.1s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(6) {
+        transition: transform 0.2s 0.12s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(7) {
+        transition: transform 0.2s 0.14s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(8) {
+        transition: transform 0.2s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(9) {
+        transition: transform 0.2s 0.18s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(10) {
+        transition: transform 0.2s 0.2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(11) {
+        transition: transform 0.2s 0.22s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(12) {
+        transition: transform 0.2s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(13) {
+        transition: transform 0.2s 0.26s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(14) {
+        transition: transform 0.2s 0.28s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(15) {
+        transition: transform 0.2s 0.3s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(16) {
+        transition: transform 0.2s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(17) {
+        transition: transform 0.2s 0.34s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(18) {
+        transition: transform 0.2s 0.36s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(19) {
+        transition: transform 0.2s 0.38s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(20) {
+        transition: transform 0.2s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(21) {
+        transition: transform 0.2s 0.42s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(22) {
+        transition: transform 0.2s 0.44s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(23) {
+        transition: transform 0.2s 0.46s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(24) {
+        transition: transform 0.2s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(25) {
+        transition: transform 0.2s 0.5s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(26) {
+        transition: transform 0.2s 0.52s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(27) {
+        transition: transform 0.2s 0.54s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(28) {
+        transition: transform 0.2s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(29) {
+        transition: transform 0.2s 0.58s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(30) {
+        transition: transform 0.2s 0.6s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(31) {
+        transition: transform 0.2s 0.62s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(32) {
+        transition: transform 0.2s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(33) {
+        transition: transform 0.2s 0.66s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(34) {
+        transition: transform 0.2s 0.68s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(35) {
+        transition: transform 0.2s 0.7s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(36) {
+        transition: transform 0.2s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(37) {
+        transition: transform 0.2s 0.74s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(38) {
+        transition: transform 0.2s 0.76s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(39) {
+        transition: transform 0.2s 0.78s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(40) {
+        transition: transform 0.2s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(41) {
+        transition: transform 0.2s 0.82s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(42) {
+        transition: transform 0.2s 0.84s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(43) {
+        transition: transform 0.2s 0.86s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(44) {
+        transition: transform 0.2s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(45) {
+        transition: transform 0.2s 0.9s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(46) {
+        transition: transform 0.2s 0.92s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(47) {
+        transition: transform 0.2s 0.94s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(48) {
+        transition: transform 0.2s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(49) {
+        transition: transform 0.2s 0.98s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li:nth-child(50) {
+        transition: transform 0.2s 1s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
+      input.hamburger:checked ~ .drawer-list li a {
+        padding-right: 15px; }
+  input.hamburger:checked ~ label > i {
+    background-color: transparent;
+    transform: rotate(90deg); }
+    input.hamburger:checked ~ label > i:before {
+      transform: translate(-50%, -50%) rotate(315deg); }
+    input.hamburger:checked ~ label > i:after {
+      transform: translate(-50%, -50%) rotate(-315deg); }
+  input.hamburger:checked ~ label .close {
+    color: #575985;
+    width: 100%; }
+  input.hamburger:checked ~ label .open {
+    color: transparent;
+    width: 0; }
 
-.header > h1 > a {
-  color: #65b0f4;
-  text-decoration: none; }
+label.hamburger {
+  z-index: 9999;
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 50px; }
+  label.hamburger:hover {
+    cursor: pointer; }
+  label.hamburger .text .close,
+  label.hamburger .text .open {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    align-text: center;
+    position: absolute;
+    transform: translateY(50px);
+    text-align: center;
+    overflow: hidden;
+    transition: width 0.25s 0.35s, color 0.45s 0.35s; }
+  label.hamburger .text .close {
+    color: transparent;
+    right: 0;
+    width: 0; }
+  label.hamburger .text .open {
+    color: #575985;
+    width: 100%; }
+  label.hamburger > i {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: #575985;
+    pointer-events: auto;
+    transition-duration: 0.35s;
+    transition-delay: 0.35s; }
+    label.hamburger > i:before, label.hamburger > i:after {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      left: 50%;
+      background-color: #575985;
+      content: "";
+      transition: transform 0.35s;
+      transform-origin: 50% 50%; }
+    label.hamburger > i:before {
+      transform: translate(-50%, -14px); }
+    label.hamburger > i:after {
+      transform: translate(-50%, 14px); }
 
-.header > h2 {
-  font-weight: normal;
-  margin: 0; }
+label.hamburger {
+  position: fixed;
+  top: 15px;
+  right: 15px; }
 
-.header > h2 > a {
-  color: #8f8f94;
-  text-decoration: none; }
+body {
+  scrollbar-base-color: #138a72;
+  scrollbar-3dlight-color: #fff;
+  scrollbar-highlight-color: #1abc9c;
+  scrollbar-track-color: #fff;
+  scrollbar-arrow-color: #1abc9c;
+  scrollbar-shadow-color: #1abc9c;
+  scrollbar-dark-shadow-color: #1abc9c;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
 
-.header > input {
-  min-width: 250px;
-  max-width: 350px;
-  width: 33%;
-  padding: 4px;
-  border: 2px solid #f7f7f7;
-  border-radius: 4px; }
+.icon {
+  display: inline-block;
+  width: 5vw;
+  height: 4vw;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
