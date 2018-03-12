@@ -4,10 +4,10 @@ const Landing = () => (
     <div className="container-primary">
         <div className="container-secondary">
             <section className="container-section">
-                <h1 className="section-element-header">Portfolio</h1>
+                <h1 className="section-element-header">UX Portfolio</h1>
                 <img
                     className="element-article-img"
-                    src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1520458806/design-desk_egzkst.jpg"
+                    src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1520805841/pexels-photo-711193_mpgdkr.png"
                     alt="ux wireframe build built by hand drawing"
                 />
                 <div className="container-sub-text">
@@ -17,10 +17,11 @@ const Landing = () => (
                         how well the experience of a thing has been improved.
                     </p>
                     <p>
-                        Creating a delightful experience requires knowledge of
-                        how decisions are made; Intuition plays a significant
-                        role in determining the complex and often subconscious
-                        set of decisions that a person might make.
+                        Creating a delightful experiences requires knowledge of
+                        how decisions are made. Furthermore, intuition plays a
+                        significant role in determining the complex and often
+                        subconscious set of decisions that a person might make
+                        in interacting with a design.
                     </p>
                     <p>
                         The craft of UX is the set of guidelines, or methods,

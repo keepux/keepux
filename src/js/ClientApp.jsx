@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Landing from './Landing';
 import Research from './Research';
+import Uxdevelopment from './Uxdevelopment';
 import '../styles/_import.sass';
 
 const FourZeroFour = () => <h1>404</h1>;
@@ -20,6 +21,7 @@ const App = () => (
             <Switch>
                 <Route exact path="/" component={Landing} />
                 <Route path="/research" component={Research} />
+                <Route path="/ux-development" component={Uxdevelopment} />
                 <Route component={FourZeroFour} />
             </Switch>
 
@@ -36,6 +38,12 @@ const App = () => (
                     <li className="drawer-style-li">
                         <Link className="drawer-style-a" to="/">
                             Home
+                        </Link>
+                    </li>
+                    <li className="drawer-style-li">
+                        {/* <a href="#">Qualatative UX</a> */}
+                        <Link className="drawer-style-a" to="/ux-development">
+                            UX Development
                         </Link>
                     </li>
                     <li className="drawer-style-li">
@@ -66,7 +74,7 @@ const App = () => (
                     </li>
                     <li className="drawer-style-li">
                         <p className="drawer-style-p" href="/">
-                            Behavior Driven Development (BDD)
+                            BDD
                         </p>
                     </li>
                     <li className="drawer-style-li">
@@ -76,7 +84,7 @@ const App = () => (
                     </li>
                     <li className="drawer-style-li">
                         <p className="drawer-style-p" href="/">
-                            Color and Typography
+                            Color
                         </p>
                     </li>
                     <li className="drawer-style-li">
