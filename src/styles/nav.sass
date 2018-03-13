@@ -11,106 +11,11 @@
   #{$attribute}: $solid-color
   #{$attribute}: $color
 
-html
-  font-family: "Lato", sans-serif
-
 body
   margin: 0
   overflow-x: hidden
   height: 100vh
   width: 100vw
-
-  ul
-
-  list-style: none
-  margin: 0
-  padding: 0
-
-// $main: #1184f0
-$main: $black-haze
-
-// $text: #fefefe
-$text: #575985
-$contrast: darken($main, 10%)
-
-.drawer-list
-  position: fixed
-  right: 0
-  top: 0
-  height: 100vh
-  width: 100vw
-  transform: translate(100vw, 0)
-
-  /* ie workaround
-  -ms-transform: translatex(-100vw)
-  box-sizing: border-box
-  pointer-events: none
-  padding-top: 125px
-  transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease
-  border-bottom-left-radius: 20vw
-
-  +alpha-attribute("background-color", rgba($contrast, 0.8), white)
-
-  @media (min-width: 768px)
-    width: 25vw
-
-  .drawer-style-ul
-    height: 100%
-    width: 100%
-    margin: 0
-    padding: 0
-    overflow: auto
-    overflow-x: hidden
-    pointer-events: auto
-
-  .drawer-style-li
-    list-style: none
-    text-transform: uppercase
-    pointer-events: auto
-    white-space: nowrap
-    box-sizing: border-box
-    transform: translatex(100vw)
-
-    /* ie workaround
-    -ms-transform: translatex(-100vw)
-
-    &:last-child
-      margin-bottom: 0.2em
-
-    .drawer-style-a
-      text-decoration: none
-      color: $victoria
-      padding-top: 10px
-      padding-bottom: 10px
-      text-align: center
-      display: block
-      font-size: calc(18px)
-
-      @media (min-width: 768px)
-        text-align: right
-
-    .drawer-style-p
-      text-decoration: none
-      color: $victoria
-      text-align: center
-      display: block
-      margin-right: 10px
-      font-size: calc(14px)
-
-      @media (min-width: 768px)
-        text-align: right
-
-    &:hover
-      cursor: pointer
-
-      // +alpha-attribute("background-color", rgba($main, 0.5), white)
-      +alpha-attribute("background-color", rgba($white, 1), white)
-
-+input-hamburger
-+label-hamburger
-+label-hamburger-fixed
-
-body
   scrollbar-base-color: rgb(19, 138, 114)
   scrollbar-3dlight-color: #fff
   scrollbar-highlight-color: #1abc9c
@@ -119,6 +24,22 @@ body
   scrollbar-shadow-color: #1abc9c
   scrollbar-dark-shadow-color: #1abc9c
   -ms-overflow-style: -ms-autohiding-scrollbar
+
+  ul
+
+  list-style: none
+  margin: 0
+  padding: 0
+
+$main: $black-haze
+$text: #575985
+$contrast: darken($main, 10%)
+
++drawer-list
+
++input-hamburger
++label-hamburger
++label-hamburger-fixed
 
 .icon
   display: inline-block
