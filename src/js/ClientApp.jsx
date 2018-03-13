@@ -41,61 +41,67 @@ const App = () => (
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        {/* <a href="#">Qualatative UX</a> */}
-                        <Link className="drawer-style-a" to="/ux-development">
+                        <Link className="drawer-style-a" to="/ux-dev">
                             UX Development
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        {/* <a href="#">Qualatative UX</a> */}
-                        <Link className="drawer-style-a" to="/research">
+                        <Link className="drawer-style-p" to="/drive-clean">
+                            Drive Clean Texas
+                        </Link>
+                    </li>
+                    <li className="drawer-style-li">
+                        <Link className="drawer-style-a" to="/qualatative-ux">
                             Qualatative UX
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            Prototypes
-                        </p>
+                        <Link
+                            className="drawer-style-p"
+                            to="/visual-regression"
+                        >
+                            Visual regression
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            Customer Feedback
-                        </p>
+                        <Link className="drawer-style-p" to="/bdd">
+                            Behavior Driven Development
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <a className="drawer-style-a" href="/">
-                            Quantatative UX
-                        </a>
+                        <Link className="drawer-style-a" to="/quantative-ux">
+                            Quantative UX
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            Visual Regression
-                        </p>
+                        <Link className="drawer-style-p" to="/">
+                            Service Model Blueprint
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            BDD
-                        </p>
+                        <Link className="drawer-style-p" to="/">
+                            Survey for friction points
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <a className="drawer-style-a" href="/">
-                            Design
-                        </a>
+                        <Link className="drawer-style-a" to="/quantative-ux">
+                            Visual Design
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            Color
-                        </p>
+                        <Link className="drawer-style-p" to="/">
+                            Storyboarding
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            Atomic Design
-                        </p>
+                        <Link className="drawer-style-p" to="/">
+                            Explainer Video
+                        </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <p className="drawer-style-p" href="/">
-                            Visual Composition
-                        </p>
+                        <Link className="drawer-style-p" to="/">
+                            UI Composition
+                        </Link>
                     </li>
                 </ul>
             </section>

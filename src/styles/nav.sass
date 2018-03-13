@@ -82,41 +82,29 @@ $contrast: darken($main, 10%)
       color: $victoria
       padding-top: 10px
       padding-bottom: 10px
-
-      // color: $text
       text-align: center
       display: block
-
-      // padding: 0.75rem
       font-size: calc(18px)
 
       @media (min-width: 768px)
         text-align: right
 
-        // padding: 0.75rem
+    .drawer-style-p
+      text-decoration: none
+      color: $victoria
+      text-align: center
+      display: block
+      margin-right: 10px
+      font-size: calc(14px)
+
+      @media (min-width: 768px)
+        text-align: right
 
     &:hover
       cursor: pointer
 
       // +alpha-attribute("background-color", rgba($main, 0.5), white)
       +alpha-attribute("background-color", rgba($white, 1), white)
-
-  .drawer-style-p
-    text-decoration: none
-
-    // color: $text
-    color: $victoria
-    text-align: center
-    display: block
-
-    // padding: 0.75rem
-    margin-right: 10px
-    font-size: calc(14px)
-
-    @media (min-width: 768px)
-      text-align: right
-
-      // padding: 0.75rem
 
 input.hamburger
   display: none
@@ -130,9 +118,6 @@ input.hamburger
         transform: translatex(0)
 
         +transition
-
-        a
-          padding-right: 15px
 
     & ~ label
       > i

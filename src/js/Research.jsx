@@ -4,7 +4,7 @@ const Research = () => (
     <div className="container-primary">
         <div className="container-secondary">
             <section className="container-section">
-                <h1 className="section-element-header">Research</h1>
+                <h1 className="section-element-header">UX Research</h1>
                 <img
                     className="element-article-img"
                     src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1520458806/design-desk_egzkst.jpg"
