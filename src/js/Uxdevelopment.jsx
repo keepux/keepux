@@ -31,23 +31,27 @@ const Uxdevelopment = () => (
                         much quicker.
                     </p>
                 </div>
+                <div className="container-secondary-button-primary">
+                    <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="http://www.drivecleantexas.org"
+                    >
+                        View Completed Project
+                    </a>
+                </div>
+                <div className="container-secondary-button-secondary">
+                    <a
+                        className="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://github.com/keepux/svg-storybook"
+                    >
+                        View Source Code
+                    </a>
+                </div>
             </section>
-        </div>
-        <div className="container-secondary-button">
-            <a
-                className="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="http://www.drivecleantexas.org"
-            >
-                View Sample Work
-            </a>
-
-            {/* <img
-                className="element-article-btn"
-                src="http://res.cloudinary.com/iammichaelneal/image/upload/v1520813832/button_vj2tti.png"
-                alt="view external portfolio item"
-            /> */}
         </div>
     </div>
 );
