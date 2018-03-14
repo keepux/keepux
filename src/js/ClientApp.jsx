@@ -2,8 +2,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Landing from './Landing';
-import Research from './Research';
 import Uxdevelopment from './Uxdevelopment';
+import Driveclean from './Driveclean';
+import Serviceblueprint from './Serviceblueprint';
+import Visualdesign from './Visualdesign';
+import Storyboard from './Storyboard';
+import Explainervideo from './Explainervideo';
+import Uicomposition from './Uicomposition';
+import Logos from './Logos';
 import '../styles/_import.sass';
 
 const FourZeroFour = () => (
@@ -34,8 +40,17 @@ const App = () => (
             </div>
             <Switch>
                 <Route exact path="/" component={Landing} />
-                <Route path="/research" component={Research} />
-                <Route path="/drive-clean" component={Uxdevelopment} />
+                <Route path="/ux-dev" component={Uxdevelopment} />
+                <Route path="/drive-clean" component={Driveclean} />
+                <Route
+                    path="/service-model-blueprint"
+                    component={Serviceblueprint}
+                />
+                <Route path="/visual-design" component={Visualdesign} />
+                <Route path="/story-board" component={Storyboard} />
+                <Route path="/explainer-video" component={Explainervideo} />
+                <Route path="/ui-composition" component={Uicomposition} />
+                <Route path="/logos" component={Logos} />
                 <Route component={FourZeroFour} />
             </Switch>
 
@@ -72,49 +87,47 @@ const App = () => (
                     <li className="drawer-style-li">
                         <Link
                             className="drawer-style-p"
-                            to="/visual-regression"
+                            to="/service-model-blueprint"
                         >
-                            Visual regression
-                        </Link>
-                    </li>
-                    <li className="drawer-style-li">
-                        <Link className="drawer-style-p" to="/bdd">
-                            Behavior Driven Development
-                        </Link>
-                    </li>
-                    <li className="drawer-style-li">
-                        <Link className="drawer-style-a" to="/quantative-ux">
-                            Quantative UX
-                        </Link>
-                    </li>
-                    <li className="drawer-style-li">
-                        <Link className="drawer-style-p" to="/">
                             Service Model Blueprint
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <Link className="drawer-style-p" to="/">
+                        <Link
+                            className="drawer-style-p"
+                            to="/survey-for-friction"
+                        >
                             Survey for friction points
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <Link className="drawer-style-a" to="/quantative-ux">
+                        <Link className="drawer-style-a" to="/visual-design">
                             Visual Design
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <Link className="drawer-style-p" to="/">
+                        <Link className="drawer-style-p" to="/story-board">
                             Storyboarding
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <Link className="drawer-style-p" to="/">
+                        <Link className="drawer-style-p" to="/explainer-video">
                             Explainer Video
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <Link className="drawer-style-p" to="/">
+                        <Link className="drawer-style-p" to="/ui-composition">
                             UI Composition
+                        </Link>
+                    </li>
+                    <li className="drawer-style-li">
+                        <Link className="drawer-style-p" to="/logos">
+                            Logos
+                        </Link>
+                    </li>
+                    <li className="drawer-style-li">
+                        <Link className="drawer-style-a" to="/visual-design">
+                            Prototypes
                         </Link>
                     </li>
                 </ul>

@@ -7,7 +7,7 @@ const Uxdevelopment = () => (
                 <h1 className="section-element-header">UX Development</h1>
                 <img
                     className="element-article-img"
-                    src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1520810063/Screenshot_2018-03-11_18.14.03_hcedb9.png"
+                    src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1521002278/ux-dev-infographic_mo66qj.png"
                     alt="ux wireframe build built by hand drawing"
                 />
                 <div className="container-sub-text">
@@ -36,9 +36,9 @@ const Uxdevelopment = () => (
                         className="button"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="http://www.drivecleantexas.org"
+                        href="http://res.cloudinary.com/iammichaelneal/image/upload/v1521002278/ux-dev-infographic_mo66qj.png"
                     >
-                        View Completed Project
+                        View a larger image of the diagram
                     </a>
                 </div>
                 <div className="container-secondary-button-secondary">
@@ -46,9 +46,9 @@ const Uxdevelopment = () => (
                         className="button"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://github.com/keepux/svg-storybook"
+                        href="https://github.com/keepux/webpack-wireframe"
                     >
-                        View Source Code
+                        UX Dev Boilerplate (Source Code)
                     </a>
                 </div>
             </section>
