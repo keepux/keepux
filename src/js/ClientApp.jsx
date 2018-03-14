@@ -6,7 +6,21 @@ import Research from './Research';
 import Uxdevelopment from './Uxdevelopment';
 import '../styles/_import.sass';
 
-const FourZeroFour = () => <h1>404</h1>;
+const FourZeroFour = () => (
+    <div className="container-primary">
+        <div className="container-secondary">
+            <section className="container-section">
+                <h1 className="section-element-header-error">404</h1>
+                <p className="section-error">
+                    The page you are looking for cannot be found.
+                </p>
+                <div className="section-error">
+                    <Link to="/">Click this link to travel back home</Link>
+                </div>
+            </section>
+        </div>
+    </div>
+);
 
 const App = () => (
     <BrowserRouter>

@@ -371,6 +371,71 @@ body {
   margin: 0;
   padding: 0; }
 
+.drawer-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(100vw, 0);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
+  border-bottom-left-radius: 20vw;
+  background-color: #e4e4e4;
+  background-color: rgba(222, 222, 222, 0.8); }
+  @media (min-width: 768px) {
+    .drawer-list {
+      width: 25vw; } }
+  .drawer-list .drawer-style-ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    pointer-events: auto; }
+    .drawer-list .drawer-style-ul .drawer-style-li {
+      list-style: none;
+      text-transform: uppercase;
+      pointer-events: auto;
+      white-space: nowrap;
+      box-sizing: border-box;
+      transform: translatex(100vw);
+      /* ie workaround */
+      -ms-transform: translatex(-100vw); }
+      .drawer-list .drawer-style-ul .drawer-style-li:last-child {
+        margin-bottom: 0.2em; }
+      .drawer-list .drawer-style-ul .drawer-style-li .drawer-style-a {
+        text-decoration: none;
+        color: #575985;
+        text-align: center;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 15px; }
+        @media (min-width: 768px) {
+          .drawer-list .drawer-style-ul .drawer-style-li .drawer-style-a {
+            text-align: right;
+            margin-right: 15px; } }
+      .drawer-list .drawer-style-ul .drawer-style-li .drawer-style-p {
+        text-decoration: none;
+        color: #575985;
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        margin-bottom: 15px; }
+        @media (min-width: 768px) {
+          .drawer-list .drawer-style-ul .drawer-style-li .drawer-style-p {
+            text-align: right;
+            margin-right: 15px; } }
+      .drawer-list .drawer-style-ul .drawer-style-li:hover {
+        cursor: pointer;
+        background-color: #ededed;
+        background-color: #ededed; }
+
 input.hamburger {
   display: none; }
   input.hamburger:checked ~ .drawer-list {
@@ -589,6 +654,16 @@ label.hamburger {
         padding-left: 20px;
         padding-top: 20px;
         padding-bottom: 10px; }
+      .container-primary .container-secondary .container-section .section-element-header-error {
+        width: 400px;
+        color: #575985;
+        text-align: center; }
+      .container-primary .container-secondary .container-section .section-error {
+        text-align: center; }
+        .container-primary .container-secondary .container-section .section-error a {
+          text-decoration: none; }
+        .container-primary .container-secondary .container-section .section-error:hover {
+          cursor: pointer; }
       .container-primary .container-secondary .container-section .container-sub-text {
         width: 400px;
         text-transform: none;
