@@ -652,8 +652,7 @@ label.hamburger {
       .container-primary .container-secondary .container-section .section-element-header {
         color: #575985;
         padding-left: 20px;
-        padding-top: 20px;
-        padding-bottom: 10px; }
+        padding-top: 20px; }
       .container-primary .container-secondary .container-section .section-element-header-error {
         width: 400px;
         color: #575985;
@@ -669,11 +668,14 @@ label.hamburger {
         text-transform: none;
         text-align: justify;
         padding-left: 20px;
-        padding-bottom: 10px;
-        padding-top: 20px; }
+        padding-bottom: 10px; }
       .container-primary .container-secondary .container-section .element-article-img {
         width: 400px;
         padding-left: 20px; }
+      .container-primary .container-secondary .container-section .image-credit-text {
+        padding-left: 20px;
+        margin-top: -5px;
+        margin-bottom: 10px; }
       .container-primary .container-secondary .container-section .container-secondary-button-primary {
         width: 440px;
         height: 60px;

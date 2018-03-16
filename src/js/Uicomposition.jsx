@@ -8,15 +8,17 @@ const Uicomposition = () => (
                 <h1 className="section-element-header">UI Composition</h1>
                 <img
                     className="element-article-img"
-                    src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1521003722/Screenshot_2017-07-19_13.20.29_p6qajw.png"
+                    src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1473134017/breakpoints_ysm2jz.png"
                     alt="ux wireframe build built by hand drawing"
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        When crafting UI systems there comes up a conversation
+                        from time to time about semantics. An nested approach to
+                        the nesting of things is helpful. In this example, we
+                        start with the viewport and work our way into an
+                        element. This is a visual diagram showing how this
+                        nesting is coordinated.
                     </p>
                 </div>
                 <img
@@ -26,10 +28,13 @@ const Uicomposition = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        In this example, an innovative table design helps keep
+                        the relevant content displayed on each row with the
+                        detailed information hidden but readily available
+                        without needing to navigate away from the screen. Some
+                        input a UX dev might provide in this example, it might
+                        be important to consider how many records are displayed
+                        initially as to keep the scrolling to a minimum.
                     </p>
                 </div>
                 <img
@@ -39,10 +44,11 @@ const Uicomposition = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        In this example, we are presented with a blueprint for a
+                        mobile layout. This generic looking layout might be used
+                        to intially test loading across various mobile devices
+                        and investigate any possible issues with the layout
+                        before moving into the inner elements.
                     </p>
                 </div>
 

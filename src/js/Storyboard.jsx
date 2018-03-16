@@ -4,7 +4,18 @@ const Storyboard = () => (
     <div className="container-primary">
         <div className="container-secondary">
             <section className="container-section">
-                <h1 className="section-element-header">Storyboard</h1>
+                <h1 className="section-element-header">Storyboarding</h1>
+                <div className="container-sub-text">
+                    <p>
+                        Storyboarding can help us understand and empathaize with
+                        the user when we are designing a product or a service.
+                        For example, in this storyboard series we are presented
+                        with three various scenerios where a girl is interacting
+                        with her mobile device. Can you locate which interaction
+                        is most safe and which is least safe? Can you describe
+                        why each is more or less safe?
+                    </p>
+                </div>
                 <img
                     className="element-article-img"
                     src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1521004603/Screenshot_2017-03-23_13.50.40_kky91i.png"
@@ -12,10 +23,7 @@ const Storyboard = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        Storyboard illustration of a girl using a mobile device.
                     </p>
                 </div>
                 <img
@@ -25,10 +33,8 @@ const Storyboard = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        Storyboard illustration of a girl talking on a mobile
+                        device.
                     </p>
                 </div>
                 <img
@@ -38,10 +44,8 @@ const Storyboard = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        Storyboard illustration of a girl reading a text message
+                        while driving.
                     </p>
                 </div>
 
@@ -52,7 +56,7 @@ const Storyboard = () => (
                         rel="noopener noreferrer"
                         href="https://www.youtube.com/watch?v=BoAkC4Qs25M"
                     >
-                        See the final explainer video
+                        This storyboard helped make this video
                     </a>
                 </div>
             </section>

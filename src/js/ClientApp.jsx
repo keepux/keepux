@@ -4,6 +4,9 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Landing from './Landing';
 import Uxdevelopment from './Uxdevelopment';
 import Driveclean from './Driveclean';
+import Rainforest from './Rainforest';
+import Qualatativeux from './Qualatativeux';
+import Frictionpoints from './Frictionpoints';
 import Serviceblueprint from './Serviceblueprint';
 import Visualdesign from './Visualdesign';
 import Storyboard from './Storyboard';
@@ -46,6 +49,9 @@ const App = () => (
                     path="/service-model-blueprint"
                     component={Serviceblueprint}
                 />
+                <Route path="/rainforest-partnership" component={Rainforest} />
+                <Route path="/qualatative-ux" component={Qualatativeux} />
+                <Route path="/friction-points" component={Frictionpoints} />
                 <Route path="/visual-design" component={Visualdesign} />
                 <Route path="/story-board" component={Storyboard} />
                 <Route path="/explainer-video" component={Explainervideo} />
@@ -80,6 +86,14 @@ const App = () => (
                         </Link>
                     </li>
                     <li className="drawer-style-li">
+                        <Link
+                            className="drawer-style-p"
+                            to="/rainforest-partnership"
+                        >
+                            Rainforest Partnership
+                        </Link>
+                    </li>
+                    <li className="drawer-style-li">
                         <Link className="drawer-style-a" to="/qualatative-ux">
                             Qualatative UX
                         </Link>
@@ -93,11 +107,13 @@ const App = () => (
                         </Link>
                     </li>
                     <li className="drawer-style-li">
-                        <Link
-                            className="drawer-style-p"
-                            to="/survey-for-friction"
-                        >
-                            Survey for friction points
+                        <Link className="drawer-style-a" to="/friction-points">
+                            Quantative UX
+                        </Link>
+                    </li>
+                    <li className="drawer-style-li">
+                        <Link className="drawer-style-p" to="/friction-points">
+                            Friction Points
                         </Link>
                     </li>
                     <li className="drawer-style-li">
@@ -123,11 +139,6 @@ const App = () => (
                     <li className="drawer-style-li">
                         <Link className="drawer-style-p" to="/logos">
                             Logos
-                        </Link>
-                    </li>
-                    <li className="drawer-style-li">
-                        <Link className="drawer-style-a" to="/visual-design">
-                            Prototypes
                         </Link>
                     </li>
                 </ul>

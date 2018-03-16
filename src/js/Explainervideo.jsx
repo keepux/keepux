@@ -12,10 +12,11 @@ const Explainervideo = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        An explainer video is a digital illustration with
+                        voice-over and music much like a commercial you might
+                        see on TV but specifically for a digital product or
+                        service and focued on a specific user story and/or set
+                        of personas.
                     </p>
                 </div>
                 <img
@@ -25,10 +26,11 @@ const Explainervideo = () => (
                 />
                 <div className="container-sub-text">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
+                        Explainer videos are helpful for marketing but can also
+                        be used in training. They are usually 30 seconds or 60
+                        seconds and include screenshots of the application with
+                        scenerios that might apply to the usage of the product
+                        or service.
                     </p>
                 </div>
                 <img
@@ -36,15 +38,6 @@ const Explainervideo = () => (
                     src="http://res.cloudinary.com/iammichaelneal/image/upload/c_scale,w_400/v1521005714/Screenshot_2018-03-14_00.35.00_vttkpr.png"
                     alt="ux wireframe build built by hand drawing"
                 />
-                <div className="container-sub-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
-                    </p>
-                </div>
-
                 <div className="container-secondary-button-secondary">
                     <a
                         className="button"

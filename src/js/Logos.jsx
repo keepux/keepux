@@ -11,12 +11,7 @@ const Logos = () => (
                     alt="ux wireframe build built by hand drawing"
                 />
                 <div className="container-sub-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
-                    </p>
+                    <p>Logo design for Clementine Chef</p>
                 </div>
                 <img
                     className="element-article-img"
@@ -24,12 +19,7 @@ const Logos = () => (
                     alt="ux wireframe build built by hand drawing"
                 />
                 <div className="container-sub-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
-                    </p>
+                    <p>Logo design for Opensail Photography</p>
                 </div>
                 <img
                     className="element-article-img"
@@ -37,12 +27,7 @@ const Logos = () => (
                     alt="ux wireframe build built by hand drawing"
                 />
                 <div className="container-sub-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Eget magna fermentum iaculis eu non diam
-                        phasellus.
-                    </p>
+                    <p>Logo design for Check-In Gift</p>
                 </div>
             </section>
         </div>
