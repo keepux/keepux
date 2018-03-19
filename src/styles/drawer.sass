@@ -12,10 +12,13 @@
     box-sizing: border-box
     pointer-events: none
     padding-top: 125px
-    transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease
-    border-bottom-left-radius: 20vw
 
-    +alpha-attribute("background-color", rgba($contrast, 0.8), white)
+    // transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease
+    transition: width 475ms ease-out, transform 450ms ease-in
+
+    // border-bottom-left-radius: 20vw
+
+    +alpha-attribute("background-color", rgba($contrast, 0.999), white)
 
     @media (min-width: 768px)
       width: 25vw
