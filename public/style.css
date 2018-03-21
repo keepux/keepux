@@ -383,10 +383,9 @@ body {
   box-sizing: border-box;
   pointer-events: none;
   padding-top: 125px;
-  transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
-  border-bottom-left-radius: 20vw;
-  background-color: #e4e4e4;
-  background-color: rgba(222, 222, 222, 0.8); }
+  transition: width 475ms ease-out, transform 450ms ease-in;
+  background-color: #dedede;
+  background-color: rgba(222, 222, 222, 0.999); }
   @media (min-width: 768px) {
     .drawer-list {
       width: 25vw; } }
@@ -443,106 +442,6 @@ input.hamburger {
     border-bottom-left-radius: 0; }
     input.hamburger:checked ~ .drawer-list li {
       transform: translatex(0); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(1) {
-        transition: transform 0.2s 0.02s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(2) {
-        transition: transform 0.2s 0.04s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(3) {
-        transition: transform 0.2s 0.06s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(4) {
-        transition: transform 0.2s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(5) {
-        transition: transform 0.2s 0.1s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(6) {
-        transition: transform 0.2s 0.12s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(7) {
-        transition: transform 0.2s 0.14s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(8) {
-        transition: transform 0.2s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(9) {
-        transition: transform 0.2s 0.18s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(10) {
-        transition: transform 0.2s 0.2s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(11) {
-        transition: transform 0.2s 0.22s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(12) {
-        transition: transform 0.2s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(13) {
-        transition: transform 0.2s 0.26s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(14) {
-        transition: transform 0.2s 0.28s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(15) {
-        transition: transform 0.2s 0.3s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(16) {
-        transition: transform 0.2s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(17) {
-        transition: transform 0.2s 0.34s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(18) {
-        transition: transform 0.2s 0.36s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(19) {
-        transition: transform 0.2s 0.38s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(20) {
-        transition: transform 0.2s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(21) {
-        transition: transform 0.2s 0.42s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(22) {
-        transition: transform 0.2s 0.44s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(23) {
-        transition: transform 0.2s 0.46s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(24) {
-        transition: transform 0.2s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(25) {
-        transition: transform 0.2s 0.5s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(26) {
-        transition: transform 0.2s 0.52s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(27) {
-        transition: transform 0.2s 0.54s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(28) {
-        transition: transform 0.2s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(29) {
-        transition: transform 0.2s 0.58s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(30) {
-        transition: transform 0.2s 0.6s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(31) {
-        transition: transform 0.2s 0.62s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(32) {
-        transition: transform 0.2s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(33) {
-        transition: transform 0.2s 0.66s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(34) {
-        transition: transform 0.2s 0.68s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(35) {
-        transition: transform 0.2s 0.7s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(36) {
-        transition: transform 0.2s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(37) {
-        transition: transform 0.2s 0.74s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(38) {
-        transition: transform 0.2s 0.76s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(39) {
-        transition: transform 0.2s 0.78s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(40) {
-        transition: transform 0.2s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(41) {
-        transition: transform 0.2s 0.82s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(42) {
-        transition: transform 0.2s 0.84s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(43) {
-        transition: transform 0.2s 0.86s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(44) {
-        transition: transform 0.2s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(45) {
-        transition: transform 0.2s 0.9s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(46) {
-        transition: transform 0.2s 0.92s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(47) {
-        transition: transform 0.2s 0.94s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(48) {
-        transition: transform 0.2s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(49) {
-        transition: transform 0.2s 0.98s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
-      input.hamburger:checked ~ .drawer-list li:nth-child(50) {
-        transition: transform 0.2s 1s cubic-bezier(0.29, 1.4, 0.44, 0.96); }
   input.hamburger:checked ~ label > i {
     background-color: transparent;
     transform: rotate(90deg); }
@@ -607,7 +506,7 @@ label.hamburger {
       transform: translate(-50%, 14px); }
 
 label.hamburger {
-  position: fixed;
+  position: absolute;
   top: 15px;
   right: 15px; }
 
@@ -623,7 +522,7 @@ label.hamburger {
   background-color: #f7f7f7; }
 
 .element-logo-app {
-  position: fixed;
+  position: relative;
   height: 35px;
   padding-left: 30px;
   padding-top: 30px; }
